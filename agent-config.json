@@ -33,8 +33,58 @@
     "life-focused insurtechs",
     "underwriting automation vendors",
     "claims, service, and agent productivity AI vendors serving life insurers",
-    "insurance AI governance, risk, and regulation"
+    "insurance AI governance, risk, and regulation",
+    "carrier AI operating maturity signals"
   ],
+  "operatingMaturitySignals": {
+    "sectionName": "AI Operating Maturity",
+    "description": "Track evidence that carriers and life-insurance vendors are moving AI from experimentation into production workflows.",
+    "signalTypes": [
+      "AI agent",
+      "MCP server",
+      "use case",
+      "copilot",
+      "workflow automation",
+      "AI platform",
+      "governance program",
+      "model risk control"
+    ],
+    "maturityLevels": [
+      "Exploration",
+      "Pilot",
+      "Production",
+      "Scaled",
+      "Embedded"
+    ],
+    "workflowAreas": [
+      "underwriting intake",
+      "accelerated underwriting",
+      "claims",
+      "policy servicing",
+      "advisor productivity",
+      "distribution",
+      "customer service",
+      "actuarial and pricing",
+      "risk and compliance",
+      "enterprise operations"
+    ],
+    "fieldsToCapture": [
+      "carrier or vendor",
+      "signal type",
+      "workflow area",
+      "maturity level",
+      "evidence source",
+      "reported impact",
+      "strategic implication",
+      "confidence"
+    ],
+    "scoringGuidance": [
+      "Count agents, MCP servers, and use cases only when a source provides credible evidence.",
+      "Prefer production, scaled, and embedded signals over raw pilot counts.",
+      "Do not treat a large number of AI use cases as high maturity unless workflow area, deployment status, and impact are clear.",
+      "Label MCP servers as watchlist unless they are connected to a named carrier workflow, vendor product, or production deployment."
+    ]
+  },
   "trackedCompanies": {
     "carriersAndReinsurers": [
       "Northwestern Mutual",
@@ -107,7 +157,14 @@
       "agentic AI",
       "automation",
       "digital underwriting",
-      "decision engine"
+      "decision engine",
+      "AI agent",
+      "copilot",
+      "MCP server",
+      "model context protocol",
+      "use case",
+      "production deployment",
+      "enterprise rollout"
     ],
     "excludeUnlessLifeInsuranceSpecific": [
       "auto insurance",
@@ -145,13 +202,15 @@
       "aiSpecificity": 25,
       "sourceQuality": 20,
       "recency": 10,
-      "strategicImpact": 10
+      "strategicImpact": 10,
+      "operatingMaturity": 10
     }
   },
   "reportRules": [
     "Separate sourced facts from inferred strategic implications.",
     "Do not include generic AI news unless it has a concrete life insurance, annuity, reinsurer, distributor, regulator, or life-insurance vendor connection.",
     "Deduplicate syndicated stories and cite the strongest available source.",
-    "Use an explicit no-major-news state when the scan finds only weak or adjacent items."
+    "Use an explicit no-major-news state when the scan finds only weak or adjacent items.",
+    "Include AI Operating Maturity signals when credible evidence shows agents, MCP servers, copilots, AI use cases, platforms, or governance controls moving into carrier or vendor workflows."
   ]
 }
