@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Life Insurance AI News Brief - July 4, 2026</title>
+  <title>Life Insurance AI News Brief - Six-Month Lookback Through July 4, 2026</title>
   <style>
     :root {
       color-scheme: light;
@@ -99,6 +99,27 @@
       padding: 14px 16px;
       margin-bottom: 16px;
     }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .metric {
+      border-top: 3px solid var(--accent);
+      background: #ffffff;
+      padding: 12px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+    .metric span {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
     .item {
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -159,18 +180,19 @@
       font-weight: 800;
       text-decoration: none;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       main { width: min(100% - 24px, 1120px); }
       nav a { flex: 1 1 auto; text-align: center; }
+      .metrics { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <p class="eyebrow">Daily executive brief</p>
+      <p class="eyebrow">Six-month executive brief</p>
       <h1>Life Insurance AI News</h1>
-      <p class="meta">Generated July 4, 2026 at 5:35 PM Eastern. Scope: US-focused life insurance, annuities, carriers, reinsurers, distributors, and life-focused insurtechs.</p>
+      <p class="meta">Generated July 4, 2026 at 5:35 PM Eastern. Lookback period: January 1, 2026 through July 4, 2026. Scope: US-focused life insurance, annuities, carriers, reinsurers, distributors, and life-focused insurtechs, with adjacent insurance-AI items labeled separately.</p>
       <nav aria-label="Report sections">
         <a href="#summary">Summary</a>
         <a href="#top-signals">Top Signals</a>
@@ -185,46 +207,88 @@
     <section id="summary">
       <h2>Executive Summary</h2>
       <div class="summary">
-        <p>The initial manual scan did not surface a high-confidence, recent US life-carrier announcement where AI was the central event. The stronger signals were adjacent: insurance CEOs increasing AI investment, insurance-specific agentic platforms, life-insurance underwriting research, and emerging AI-risk coverage analysis.</p>
-        <p>Strategic read: life insurers should watch for AI moving from experimentation into underwriting intake, advisor productivity, service automation, and risk governance, but today&apos;s visible public news flow remains more vendor-led and industry-wide than carrier-specific.</p>
+        <p>The last six months show accelerating AI activity around insurance, but public evidence remains stronger for insurtechs, vendors, research, and governance than for named US life carriers announcing production AI deployments.</p>
+        <p>The highest-confidence life-insurance signal is Ethos, a life-insurance technology company using machine learning and data science in a no-medical-exam buying model, becoming a public-market comparison point for digital life distribution. The strongest operating-maturity signals are still mostly research or vendor-led: agentic underwriting controls, adaptive life-insurance questionnaires, insurance-specific agentic platforms, and AI-risk coverage frameworks.</p>
+        <p>Strategic read: life carriers should watch for AI moving from isolated experiments into underwriting intake, advisor productivity, service automation, governance, and risk-transfer products. The public record does not yet support counting many carrier AI agents, MCP servers, or production use cases by name.</p>
+        <div class="metrics" aria-label="Six-month signal counts">
+          <div class="metric"><strong>2</strong><span>life-specific signals</span></div>
+          <div class="metric"><strong>4</strong><span>operating maturity signals</span></div>
+          <div class="metric"><strong>3</strong><span>risk and governance signals</span></div>
+          <div class="metric"><strong>0</strong><span>verified carrier MCP signals</span></div>
+        </div>
       </div>
     </section>
 
     <section id="top-signals">
       <h2>Top Signals</h2>
-      <div class="empty">
-        <p><strong>No major high-confidence US life-insurance-specific AI announcement was found in this initial manual pass.</strong></p>
-        <p>The items below are still worth monitoring because they may influence carrier AI budgets, underwriting workflows, vendor selection, or governance posture.</p>
-      </div>
-    </section>
-
-    <section id="carriers">
-      <h2>Carriers</h2>
       <div class="item">
-        <h3><a href="https://www.techradar.com/pro/ai-is-the-top-investment-area-for-3-out-of-4-insurance-ceos">AI becomes a top investment priority for insurance CEOs</a></h3>
+        <h3><a href="https://www.investors.com/stock-lists/ipo-analysis/ethos-stock-life-stock/">Ethos becomes a public-market life-insurtech benchmark</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Ethos Technologies</span>
+          <span><span class="label">Date:</span> January to April 2026</span>
+          <span class="confidence high">High life-insurance relevance</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> Ethos is described as a life-insurance company using data science and machine learning to modernize the application process and reduce reliance on traditional medical exams. It began trading publicly in January 2026 and reported strong Q4 growth in subsequent coverage.</p>
+        <p><span class="label">Inference:</span> Ethos gives incumbents a clearer public benchmark for digital life acquisition, accelerated underwriting, and technology-enabled unit economics.</p>
+        <div class="tags"><span class="tag">life insurtech</span><span class="tag">machine learning</span><span class="tag">digital distribution</span><span class="tag">accelerated underwriting</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://www.techradar.com/pro/ai-is-the-top-investment-area-for-3-out-of-4-insurance-ceos">Insurance CEOs prioritize AI investment</a></h3>
         <p class="details">
           <span><span class="label">Organization:</span> KPMG insurance CEO research, reported by TechRadar</span>
           <span><span class="label">Date:</span> June 2026</span>
           <span class="confidence medium">Medium confidence</span>
         </p>
-        <p><span class="label">Sourced facts:</span> The report says 73% of insurance CEOs rank AI as their top investment priority, with use cases including underwriting, claims, onboarding, and customer service.</p>
-        <p><span class="label">Inference:</span> For life carriers, this supports a near-term expectation that AI initiatives will compete for executive budget across underwriting, service, and distribution, even when public announcements are sparse.</p>
+        <p><span class="label">Sourced facts:</span> The coverage says 73% of insurance CEOs rank AI as their top investment priority, with cited functions including underwriting, claims, onboarding, and customer service.</p>
+        <p><span class="label">Inference:</span> Carrier AI spending is likely moving from innovation theater into core operations, but the public source does not identify specific life-carrier deployments.</p>
         <div class="tags"><span class="tag">carrier strategy</span><span class="tag">AI budgets</span><span class="tag">underwriting</span><span class="tag">service automation</span></div>
+      </div>
+    </section>
+
+    <section id="carriers">
+      <h2>Carriers</h2>
+      <div class="empty">
+        <p><strong>No named US life carrier public announcement was found that verified a new production AI agent, MCP server, or scaled AI use-case rollout during the six-month lookback.</strong></p>
+        <p>Carrier relevance is visible through CEO investment priorities, regulatory pressure, and vendor/research signals rather than specific carrier deployment disclosures.</p>
+      </div>
+      <div class="item">
+        <h3><a href="https://www.techradar.com/pro/ai-is-the-top-investment-area-for-3-out-of-4-insurance-ceos">AI investment priority spans underwriting, claims, onboarding, and service</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Insurance CEOs, KPMG research</span>
+          <span><span class="label">Date:</span> June 2026</span>
+          <span class="confidence medium">Medium confidence</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> Coverage of the KPMG report identifies AI as a leading investment priority and names underwriting, claims, onboarding, and customer service as areas of adoption.</p>
+        <p><span class="label">Inference:</span> For life carriers, the practical near-term deployment surface is likely underwriting triage, service-center assistance, advisor enablement, and policyholder onboarding.</p>
+        <div class="tags"><span class="tag">carrier strategy</span><span class="tag">operating model</span><span class="tag">AI adoption</span></div>
       </div>
     </section>
 
     <section id="vendors">
       <h2>Insurtechs &amp; Vendors</h2>
       <div class="item">
-        <h3><a href="https://m.economictimes.com/markets/stocks/news/coforge-shares-gain-over-2-after-unveiling-agentic-ai-platform-for-insurance-industry/articleshow/131454733.cms">Coforge unveils agentic AI platform for the insurance industry</a></h3>
+        <h3><a href="https://www.investors.com/stock-lists/ipo-analysis/ethos-stock-life-stock/">Ethos extends the life-insurance AI distribution signal</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Ethos Technologies</span>
+          <span><span class="label">Date:</span> January to April 2026</span>
+          <span class="confidence high">High life-insurance relevance</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> Investor coverage describes Ethos as a newly public life-insurance company that uses machine learning and data science to remove traditional medical exams for most applicants.</p>
+        <p><span class="label">Inference:</span> Public-market scrutiny may make Ethos a useful comparison point for direct-to-consumer acquisition efficiency, underwriting automation, and embedded life insurance distribution.</p>
+        <div class="tags"><span class="tag">Ethos</span><span class="tag">life insurance</span><span class="tag">ML underwriting</span><span class="tag">public markets</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://m.economictimes.com/markets/stocks/news/coforge-shares-gain-over-2-after-unveiling-agentic-ai-platform-for-insurance-industry/articleshow/131454733.cms">Coforge launches Nexa Agentic AI Platform for insurance</a></h3>
         <p class="details">
           <span><span class="label">Organization:</span> Coforge</span>
-          <span><span class="label">Date:</span> June 2026</span>
+          <span><span class="label">Date:</span> June 2, 2026</span>
           <span class="confidence low">Low confidence for US life specificity</span>
         </p>
-        <p><span class="label">Sourced facts:</span> Coforge announced Nexa, an agentic AI platform positioned for the global insurance industry.</p>
-        <p><span class="label">Inference:</span> This is vendor-led and not life-specific in the available coverage, but it is relevant to life insurers evaluating agentic AI for operations, underwriting support, or service workflows.</p>
-        <div class="tags"><span class="tag">vendor platform</span><span class="tag">agentic AI</span><span class="tag">operations</span></div>
+        <p><span class="label">Sourced facts:</span> Coforge announced Nexa, an agentic AI platform designed for the global insurance industry.</p>
+        <p><span class="label">Inference:</span> This is vendor-led and not life-specific in the available coverage, but it points to agentic AI becoming packaged for insurer operations rather than only generic enterprise productivity.</p>
+        <div class="tags"><span class="tag">vendor platform</span><span class="tag">agentic AI</span><span class="tag">insurance operations</span></div>
       </div>
 
       <div class="item">
@@ -234,102 +298,143 @@
           <span><span class="label">Date:</span> June 2026</span>
           <span class="confidence low">Low confidence for US life specificity</span>
         </p>
-        <p><span class="label">Sourced facts:</span> The companies announced a partnership to support AI-powered insurance modernization, including agentic AI capabilities, initially outside the US.</p>
-        <p><span class="label">Inference:</span> While geographically outside this agent&apos;s core scope, the partnership is a useful watchlist signal for insurance core-platform modernization and AI-enabled digital experience expectations.</p>
+        <p><span class="label">Sourced facts:</span> The companies announced a partnership to support AI-powered insurance modernization and agentic AI capabilities, initially focused outside the US.</p>
+        <p><span class="label">Inference:</span> The signal is useful for life insurers evaluating whether core and digital-experience vendors will bundle agentic AI into modernization programs.</p>
         <div class="tags"><span class="tag">core systems</span><span class="tag">agentic AI</span><span class="tag">digital experience</span></div>
-      </div>
-
-      <div class="item">
-        <h3><a href="https://en.wikipedia.org/wiki/Ethos_Technologies">Ethos remains a life-insurance AI underwriting watch target after 2026 public-market activity</a></h3>
-        <p class="details">
-          <span><span class="label">Organization:</span> Ethos Technologies</span>
-          <span><span class="label">Date:</span> 2026 background signal</span>
-          <span class="confidence low">Low confidence source; monitor primary sources</span>
-        </p>
-        <p><span class="label">Sourced facts:</span> The available profile describes Ethos as using machine learning and data science in a platform and underwriting engine for online life insurance distribution.</p>
-        <p><span class="label">Inference:</span> Ethos should remain on the daily agent&apos;s tracked-company list because public-company disclosures and product updates may reveal how AI-driven life distribution and underwriting are maturing.</p>
-        <div class="tags"><span class="tag">life insurtech</span><span class="tag">underwriting engine</span><span class="tag">distribution</span></div>
       </div>
     </section>
 
     <section id="operating-maturity">
       <h2>AI Operating Maturity</h2>
       <div class="empty">
-        <p><strong>No verified production maturity signal was found in this initial manual pass.</strong></p>
-        <p>This section will track credible evidence of AI agents, MCP servers, copilots, named use cases, production deployments, scaled rollouts, embedded workflows, governance controls, and measurable operating impact.</p>
+        <p><strong>No credible source in the six-month scan confirmed a named US life carrier bringing a specific MCP server online.</strong></p>
+        <p>The strongest maturity evidence is around AI-agent and LLM-enabled underwriting patterns, adaptive intake, vendor platforms, and frameworks for controlling autonomous actions.</p>
       </div>
+
       <div class="item">
-        <h3>Operating maturity scorecard added for future scans</h3>
+        <h3><a href="https://arxiv.org/abs/2602.13213">Agentic underwriting with adversarial self-critique</a></h3>
         <p class="details">
-          <span><span class="label">Signal type:</span> Scorecard</span>
-          <span><span class="label">Workflow area:</span> Enterprise AI adoption</span>
-          <span><span class="label">Maturity:</span> Tracking framework</span>
+          <span><span class="label">Signal type:</span> AI agent / underwriting workflow</span>
+          <span><span class="label">Workflow area:</span> Underwriting</span>
+          <span><span class="label">Maturity:</span> Research / pilot blueprint</span>
           <span class="confidence medium">Medium confidence</span>
         </p>
-        <p><span class="label">Sourced facts:</span> The current scan found adjacent AI platform and research signals, but no carrier-specific source confirming newly productionized AI agents, MCP servers, or named life-insurance AI use cases.</p>
-        <p><span class="label">Inference:</span> Future reports should distinguish raw AI activity from operating maturity by capturing workflow area, deployment stage, reported impact, and confidence in the evidence.</p>
-        <div class="tags"><span class="tag">AI agents</span><span class="tag">MCP servers</span><span class="tag">use cases</span><span class="tag">production maturity</span><span class="tag">scorecard</span></div>
+        <p><span class="label">Sourced facts:</span> The January 2026 paper presents a human-in-the-loop agentic underwriting system with a critic agent and reports reduced hallucination and improved decision accuracy in a 500-case evaluation.</p>
+        <p><span class="label">Inference:</span> This is not a carrier deployment, but it is a practical architecture for life insurers considering AI-assisted underwriting without surrendering binding decision authority.</p>
+        <div class="tags"><span class="tag">AI agent</span><span class="tag">underwriting</span><span class="tag">human in the loop</span><span class="tag">controls</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://arxiv.org/abs/2604.02034">Adaptive questionnaires tested in a life insurance system</a></h3>
+        <p class="details">
+          <span><span class="label">Signal type:</span> LLM use case</span>
+          <span><span class="label">Workflow area:</span> Underwriting intake</span>
+          <span><span class="label">Maturity:</span> Pilot / research test</span>
+          <span class="confidence medium">Medium confidence</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> The April 2026 ARQuest paper describes LLM-powered adaptive insurance questionnaires and says a life insurance system integrated into an industry partner mobile app was tested in two experiments.</p>
+        <p><span class="label">Inference:</span> Adaptive intake could reduce application friction and create better follow-up questions, but alternative data use, consent, and explainability would need careful governance.</p>
+        <div class="tags"><span class="tag">use case</span><span class="tag">LLM</span><span class="tag">life underwriting</span><span class="tag">customer experience</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://arxiv.org/abs/2606.16465">Trace-economic underwriting proposes pricing autonomous AI-agent actions</a></h3>
+        <p class="details">
+          <span><span class="label">Signal type:</span> AI-agent risk control</span>
+          <span><span class="label">Workflow area:</span> Operations / risk transfer</span>
+          <span><span class="label">Maturity:</span> Research framework</span>
+          <span class="confidence medium">Medium confidence</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> The June 2026 paper proposes mapping AI-agent tool-use traces to economic exposure and insurance pricing, including controls that reduce tail risk in evaluated traces.</p>
+        <p><span class="label">Inference:</span> This is relevant to carrier governance because future AI agents in service, underwriting, or claims may need trace-level permissions, auditability, and capital-aware controls.</p>
+        <div class="tags"><span class="tag">AI agents</span><span class="tag">runtime controls</span><span class="tag">traceability</span><span class="tag">risk transfer</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://m.economictimes.com/markets/stocks/news/coforge-shares-gain-over-2-after-unveiling-agentic-ai-platform-for-insurance-industry/articleshow/131454733.cms">Insurance-specific agentic AI platforms move into vendor packaging</a></h3>
+        <p class="details">
+          <span><span class="label">Signal type:</span> Vendor platform</span>
+          <span><span class="label">Workflow area:</span> Enterprise operations</span>
+          <span><span class="label">Maturity:</span> Commercial platform announcement</span>
+          <span class="confidence low">Low confidence for life specificity</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> Coforge announced an agentic AI platform for the global insurance industry.</p>
+        <p><span class="label">Inference:</span> Carrier maturity tracking should watch whether these platforms move beyond announcements into named workflows, implementation partners, measurable adoption, and production references.</p>
+        <div class="tags"><span class="tag">agentic AI</span><span class="tag">vendor platform</span><span class="tag">production watchlist</span></div>
       </div>
     </section>
 
     <section id="risk">
       <h2>Regulatory &amp; Risk</h2>
       <div class="item">
-        <h3><a href="https://arxiv.org/abs/2605.18784">Research maps the insurability frontier for AI risk</a></h3>
+        <h3><a href="https://www.axios.com/local/denver/2026/05/03/colorado-ai-artificial-intellligence-legislation">Colorado AI rulemaking keeps insurance automated decisioning in scope</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Colorado lawmakers</span>
+          <span><span class="label">Date:</span> May 2026</span>
+          <span class="confidence medium">Medium confidence</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> Axios reported that Colorado lawmakers introduced a revised AI framework targeting automated decision-making in areas including insurance, with a proposed January 1, 2027 effective date.</p>
+        <p><span class="label">Inference:</span> Life insurers using AI in underwriting, eligibility, pricing, or servicing should expect disclosure, appeal, impact-assessment, and anti-discrimination expectations to remain active policy concerns.</p>
+        <div class="tags"><span class="tag">regulation</span><span class="tag">automated decisioning</span><span class="tag">insurance</span><span class="tag">governance</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://arxiv.org/abs/2605.18784">Research maps affirmative AI coverage, silent exposure, and exclusions</a></h3>
         <p class="details">
           <span><span class="label">Organization:</span> Academic research</span>
           <span><span class="label">Date:</span> May 2026</span>
           <span class="confidence medium">Medium confidence</span>
         </p>
-        <p><span class="label">Sourced facts:</span> The paper maps AI-mediated losses across insurance products and discusses affirmative AI coverage, silent exposures, exclusions, and systemic concentration risk.</p>
-        <p><span class="label">Inference:</span> Life insurers deploying AI internally should treat this as a governance prompt: vendor concentration, model failure, and silent exposure questions may affect operational risk and E&amp;O posture.</p>
-        <div class="tags"><span class="tag">AI risk</span><span class="tag">governance</span><span class="tag">coverage</span><span class="tag">systemic risk</span></div>
+        <p><span class="label">Sourced facts:</span> The paper maps AI-mediated losses across insurance products and discusses affirmative coverage, silent AI exposure, exclusions, and foundation-model concentration risk.</p>
+        <p><span class="label">Inference:</span> Life insurers should treat AI deployment as both an operational risk and a potential product/coverage-design issue, especially where vendor concentration or model failure could create correlated losses.</p>
+        <div class="tags"><span class="tag">AI risk</span><span class="tag">silent exposure</span><span class="tag">coverage</span><span class="tag">systemic risk</span></div>
       </div>
 
       <div class="item">
-        <h3><a href="https://arxiv.org/abs/2606.05449">Agentic AI creates new insurance underwriting and liability questions</a></h3>
+        <h3><a href="https://arxiv.org/abs/2606.05449">Agentic AI creates new underwriting and liability questions</a></h3>
         <p class="details">
           <span><span class="label">Organization:</span> Academic research</span>
           <span><span class="label">Date:</span> June 2026</span>
           <span class="confidence medium">Medium confidence</span>
         </p>
-        <p><span class="label">Sourced facts:</span> The paper analyzes risks from autonomous AI systems, including tool use, model drift, prompt injection, and dependency failures.</p>
-        <p><span class="label">Inference:</span> Life insurers considering agentic workflows should require traceability, delegated-authority controls, and escalation rules before using agents in underwriting, service, or claims operations.</p>
-        <div class="tags"><span class="tag">agentic AI</span><span class="tag">operational risk</span><span class="tag">controls</span></div>
+        <p><span class="label">Sourced facts:</span> The paper analyzes agentic AI risks including tool use, prompt injection, autonomous decision errors, model drift, dependency failures, and cyber-physical harms.</p>
+        <p><span class="label">Inference:</span> Any carrier AI-agent rollout should include delegated-authority limits, telemetry, escalation rules, and model/vendor dependency mapping.</p>
+        <div class="tags"><span class="tag">agentic AI</span><span class="tag">liability</span><span class="tag">operational risk</span></div>
       </div>
     </section>
 
     <section id="watchlist">
       <h2>Watchlist</h2>
       <div class="item">
-        <h3><a href="https://arxiv.org/abs/2604.02034">Adaptive questionnaires tested for insurance risk profiling</a></h3>
+        <h3><a href="https://arxiv.org/abs/2602.00456">UNDERWRITE benchmark tests agents in insurance underwriting environments</a></h3>
         <p class="details">
-          <span><span class="label">Organization:</span> Academic research with industry partner context</span>
-          <span><span class="label">Date:</span> April 2026</span>
+          <span><span class="label">Organization:</span> Academic research</span>
+          <span><span class="label">Date:</span> January 2026</span>
           <span class="confidence medium">Medium confidence</span>
         </p>
-        <p><span class="label">Sourced facts:</span> The ARQuest framework uses LLMs and alternative data to create adaptive insurance questionnaires, including testing in a life insurance system integrated into a partner mobile app.</p>
-        <p><span class="label">Inference:</span> Adaptive intake may become a meaningful life underwriting and customer-experience pattern, but carriers will need careful governance around alternative data, explainability, and consumer consent.</p>
-        <div class="tags"><span class="tag">life underwriting</span><span class="tag">adaptive intake</span><span class="tag">LLM</span><span class="tag">customer experience</span></div>
+        <p><span class="label">Sourced facts:</span> The paper introduces an expert-first, multi-turn insurance underwriting benchmark and reports gaps between lab performance and enterprise readiness.</p>
+        <p><span class="label">Inference:</span> This is a useful diligence tool for life insurers evaluating AI agents because workflow realism, noisy tools, and hallucination behavior matter more than generic benchmark scores.</p>
+        <div class="tags"><span class="tag">benchmark</span><span class="tag">AI agents</span><span class="tag">underwriting</span><span class="tag">enterprise readiness</span></div>
       </div>
 
       <div class="item">
-        <h3><a href="https://www.wsj.com/pro/cybersecurity/cyber-insurers-focus-on-speed-as-ai-rewrites-security-0983ad61">AI changes cyber underwriting expectations around response speed</a></h3>
+        <h3><a href="https://www.wsj.com/pro/cybersecurity/cyber-insurers-focus-on-speed-as-ai-rewrites-security-0983ad61">Cyber insurers sharpen AI governance expectations</a></h3>
         <p class="details">
           <span><span class="label">Organization:</span> Cyber insurers, reported by The Wall Street Journal</span>
           <span><span class="label">Date:</span> July 1, 2026</span>
           <span class="confidence low">Low confidence for life specificity</span>
         </p>
         <p><span class="label">Sourced facts:</span> The article reports that cyber insurers are asking more detailed questions about AI-related vulnerability response, vendor oversight, and resilience.</p>
-        <p><span class="label">Inference:</span> Although this is cyber rather than life insurance, similar AI governance expectations may influence life carriers&apos; third-party risk, model operations, and enterprise resilience programs.</p>
+        <p><span class="label">Inference:</span> Although adjacent to life insurance, this could foreshadow similar enterprise-risk expectations for life carriers deploying AI in sensitive workflows.</p>
         <div class="tags"><span class="tag">adjacent insurance</span><span class="tag">cyber risk</span><span class="tag">vendor oversight</span></div>
       </div>
     </section>
 
     <section class="notes">
       <h2>Source Notes</h2>
-      <p>This first report was generated from a manual web scan and intentionally distinguishes strong life-insurance-specific signals from broader insurance-AI watchlist items.</p>
-      <p>Future scheduled runs should favor primary carrier, insurtech, regulator, newswire, and insurance trade sources and should avoid promoting adjacent-line items into Top Signals unless the life insurance link is explicit.</p>
+      <p>This expanded report covers January 1, 2026 through July 4, 2026. It intentionally separates life-insurance-specific items from broader insurance-AI, vendor, regulatory, and research signals.</p>
+      <p>Confidence is highest where the source directly connects AI to life insurance or underwriting. Vendor-led and adjacent-line items remain useful but are labeled as lower-confidence for US life-insurance specificity.</p>
+      <p>Future daily runs should update this baseline with new items and continue tracking carrier AI agents, MCP servers, named use cases, maturity stage, workflow area, source quality, and reported impact.</p>
       <a class="back" href="../index.html">Back to index</a>
     </section>
   </main>
