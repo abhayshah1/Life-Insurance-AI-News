@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Life Insurance AI News</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #16202a;
+      --muted: #5e6b78;
+      --line: #d9e0e7;
+      --panel: #f7f9fb;
+      --accent: #0f6f78;
+      --accent-2: #8a5a18;
+      --good: #146b3a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      line-height: 1.5;
+    }
+    main {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      letter-spacing: 0;
+      line-height: 1.05;
+    }
+    .lede {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .latest {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .latest h2,
+    .reports h2,
+    .config h2 {
+      margin: 0 0 6px;
+      font-size: 1.25rem;
+    }
+    .latest p,
+    .config p {
+      margin: 0;
+      color: var(--muted);
+    }
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    ul {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+      border-top: 1px solid var(--line);
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    li a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .status {
+      color: var(--good);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .config {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+    code {
+      background: #eef3f5;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 1px 5px;
+    }
+    @media (max-width: 700px) {
+      .latest,
+      li {
+        grid-template-columns: 1fr;
+        display: block;
+      }
+      a.button {
+        margin-top: 16px;
+        width: 100%;
+      }
+      .status {
+        display: block;
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Daily Life Insurance AI News</h1>
+      <p class="lede">A daily executive scan of AI activity affecting US life insurers, annuity providers, reinsurers, distributors, and life-focused insurtechs.</p>
+    </header>
+
+    <section class="latest" aria-labelledby="latest-title">
+      <div>
+        <h2 id="latest-title">Latest report</h2>
+        <p>Initial manual scan generated on July 4, 2026.</p>
+      </div>
+      <a class="button" href="reports/2026-07-04.html">Open latest</a>
+    </section>
+
+    <section class="reports" aria-labelledby="reports-title">
+      <h2 id="reports-title">Report archive</h2>
+      <ul>
+        <li>
+          <a href="reports/2026-07-04.html">July 4, 2026 executive brief</a>
+          <span class="status">Latest</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="config" aria-labelledby="config-title">
+      <h2 id="config-title">Agent configuration</h2>
+      <p>Research policy and scoring rules are stored in <code>agent-config.json</code>. The scheduled prompt is stored in <code>agent-prompt.md</code>.</p>
+    </section>
+  </main>
+</body>
+</html>

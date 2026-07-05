@@ -1,0 +1,157 @@
+{
+  "agentName": "Daily Life Insurance AI News Agent",
+  "audience": "strategy-executive",
+  "geography": "United States",
+  "cadence": {
+    "frequency": "daily",
+    "defaultRunTime": "08:00",
+    "timeZone": "America/New_York"
+  },
+  "output": {
+    "format": "html",
+    "reportsDirectory": "reports",
+    "indexFile": "index.html",
+    "filenamePattern": "YYYY-MM-DD.html"
+  },
+  "publishing": {
+    "provider": "github",
+    "remoteName": "origin",
+    "branch": "master",
+    "siteType": "GitHub Pages static site",
+    "publishCommand": "git add agent-config.json agent-prompt.md index.html reports && git commit -m \"Update daily life insurance AI news report\" && git push origin master",
+    "notes": [
+      "A GitHub remote named origin must be configured before publishing can succeed.",
+      "Enable GitHub Pages for the repository from the root of the publishing branch.",
+      "Generated reports are public if the GitHub Pages site is public."
+    ]
+  },
+  "trackedSegments": [
+    "life insurance carriers",
+    "annuity providers",
+    "life and annuity reinsurers",
+    "life insurance distributors and brokerages",
+    "life-focused insurtechs",
+    "underwriting automation vendors",
+    "claims, service, and agent productivity AI vendors serving life insurers",
+    "insurance AI governance, risk, and regulation"
+  ],
+  "trackedCompanies": {
+    "carriersAndReinsurers": [
+      "Northwestern Mutual",
+      "New York Life",
+      "MassMutual",
+      "Prudential Financial",
+      "Lincoln Financial",
+      "Guardian Life",
+      "Pacific Life",
+      "Protective Life",
+      "Principal Financial",
+      "Nationwide",
+      "Transamerica",
+      "Brighthouse Financial",
+      "Corebridge Financial",
+      "Equitable",
+      "John Hancock",
+      "Munich Re",
+      "RGA",
+      "Swiss Re"
+    ],
+    "insurtechAndVendors": [
+      "Ethos",
+      "Bestow",
+      "Ladder",
+      "Policygenius",
+      "Fabric by Gerber Life",
+      "Haven Life",
+      "SuranceBay",
+      "iPipeline",
+      "Atidot",
+      "Gradient AI",
+      "Carpe Data",
+      "Human API",
+      "Swiss Re Magnum",
+      "Munich Re alitheia",
+      "Sapiens",
+      "Sureify",
+      "Unqork",
+      "Ushur",
+      "Coforge",
+      "InsureMO"
+    ]
+  },
+  "keywords": {
+    "mustRelateToOneOf": [
+      "life insurance",
+      "annuity",
+      "mortality",
+      "underwriting",
+      "policy issue",
+      "accelerated underwriting",
+      "claims",
+      "policy servicing",
+      "agent productivity",
+      "distribution",
+      "brokerage",
+      "reinsurance",
+      "insurance regulation"
+    ],
+    "aiTerms": [
+      "AI",
+      "artificial intelligence",
+      "generative AI",
+      "GenAI",
+      "large language model",
+      "LLM",
+      "machine learning",
+      "predictive model",
+      "agentic AI",
+      "automation",
+      "digital underwriting",
+      "decision engine"
+    ],
+    "excludeUnlessLifeInsuranceSpecific": [
+      "auto insurance",
+      "homeowners insurance",
+      "property insurance",
+      "casualty insurance",
+      "cyber insurance",
+      "health insurance",
+      "pet insurance",
+      "travel insurance"
+    ]
+  },
+  "sourcePolicy": {
+    "preferredSources": [
+      "company press rooms and blogs",
+      "regulator publications and enforcement releases",
+      "SEC filings and earnings materials",
+      "reputable insurance trade publications",
+      "major newswires",
+      "analyst or research reports with cited sources"
+    ],
+    "minimumCitationStandard": "Every included item must include a working URL and publication date when discoverable.",
+    "confidenceLabels": [
+      "High: primary source or named-company announcement",
+      "Medium: reputable trade or business publication with enough detail",
+      "Low: broad industry signal, thinly sourced item, or adjacent-line relevance"
+    ]
+  },
+  "scoring": {
+    "minimumIncludeScore": 60,
+    "topSignalScore": 80,
+    "dedupeWindowDays": 14,
+    "scoreWeights": {
+      "lifeInsuranceSpecificity": 35,
+      "aiSpecificity": 25,
+      "sourceQuality": 20,
+      "recency": 10,
+      "strategicImpact": 10
+    }
+  },
+  "reportRules": [
+    "Separate sourced facts from inferred strategic implications.",
+    "Do not include generic AI news unless it has a concrete life insurance, annuity, reinsurer, distributor, regulator, or life-insurance vendor connection.",
+    "Deduplicate syndicated stories and cite the strongest available source.",
+    "Use an explicit no-major-news state when the scan finds only weak or adjacent items."
+  ]
+}
