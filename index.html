@@ -63,6 +63,21 @@
       margin: 12px 0 0;
       color: var(--muted);
     }
+    .hero-image {
+      margin: 22px 0 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      aspect-ratio: 3 / 1;
+      background: var(--soft);
+    }
+    .hero-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     nav {
       position: sticky;
       top: 0;
@@ -264,6 +279,9 @@
       <p class="eyebrow">Technology Shift Impact Brief</p>
       <h1>AI in Life Insurance</h1>
       <p class="meta">Generated July 6, 2026. Lookback period: January 1, 2026 through July 6, 2026. Scope: US life insurance, annuities, life distribution, reinsurers, life-focused insurtechs, and adjacent insurance AI signals where they change the strategic posture for carriers.</p>
+      <figure class="hero-image" aria-label="AI usage in life insurance banner">
+        <img src="assets/ai-insurance-banner.png" alt="AI data overlays across life insurance dashboards, policy documents, and protection imagery">
+      </figure>
     </header>
 
     <nav aria-label="Report sections">
