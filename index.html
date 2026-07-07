@@ -11,19 +11,27 @@
       --muted: #5f6c78;
       --line: #d8e0e7;
       --soft: #f5f8fa;
+      --soft-accent: #e9f6f5;
+      --warm: #fff8eb;
       --accent: #0f6f78;
       --accent-dark: #0a4d54;
       --amber: #8a5a18;
       --green: #146b3a;
       --red: #9b2c2c;
       --white: #ffffff;
+      --shadow: 0 10px 30px rgba(23, 33, 43, 0.08);
+    }
+    html {
+      scroll-behavior: smooth;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
       color: var(--ink);
-      background: var(--white);
+      background:
+        linear-gradient(180deg, var(--warm) 0, #ffffff 360px),
+        var(--white);
       line-height: 1.5;
     }
     main {
@@ -32,12 +40,12 @@
       padding: 36px 0 56px;
     }
     header {
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 26px;
+      padding: 28px 0 0;
+      border-bottom: 0;
+      margin-bottom: 0;
     }
     .eyebrow {
-      color: var(--accent);
+      color: var(--amber);
       font-size: 0.78rem;
       font-weight: 800;
       letter-spacing: 0.08em;
@@ -56,23 +64,42 @@
       color: var(--muted);
     }
     nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin: 22px 0 0;
+      margin: 22px 0 26px;
+      padding: 12px 0;
+      background: rgba(255, 255, 255, 0.94);
+      border-top: 1px solid rgba(216, 224, 231, 0.75);
+      border-bottom: 1px solid rgba(216, 224, 231, 0.9);
+      backdrop-filter: blur(10px);
     }
     nav a {
       color: var(--accent-dark);
       border: 1px solid var(--line);
       border-radius: 6px;
+      background: #ffffff;
       padding: 7px 10px;
       text-decoration: none;
       font-weight: 800;
       font-size: 0.92rem;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+    }
+    nav a:hover,
+    nav a:focus-visible {
+      color: #ffffff;
+      background: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+      outline: none;
     }
     section {
       padding: 28px 0;
       border-bottom: 1px solid var(--line);
+      scroll-margin-top: 82px;
     }
     h2 {
       margin: 0 0 14px;
@@ -87,10 +114,12 @@
     p { margin: 0 0 10px; }
     p:last-child { margin-bottom: 0; }
     .summary {
-      background: var(--soft);
+      background:
+        linear-gradient(135deg, var(--soft-accent), #ffffff 70%);
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 18px;
+      box-shadow: var(--shadow);
     }
     .metrics {
       display: grid;
@@ -125,9 +154,11 @@
       border-radius: 8px;
       padding: 16px;
       background: var(--white);
+      box-shadow: 0 6px 18px rgba(23, 33, 43, 0.05);
     }
     .action {
       border-left: 4px solid var(--accent);
+      background: linear-gradient(180deg, #ffffff, #fbfdfd);
     }
     .action.high { border-left-color: var(--red); }
     .action.medium { border-left-color: var(--amber); }
@@ -173,7 +204,7 @@
       vertical-align: top;
     }
     th {
-      background: var(--soft);
+      background: var(--soft-accent);
       font-size: 0.86rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -206,8 +237,20 @@
       padding: 0 14px;
       background: var(--white);
     }
+    .archive-links a:hover,
+    .archive-links a:focus-visible {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+      outline: none;
+    }
     @media (max-width: 850px) {
       main { width: min(100% - 24px, 1180px); }
+      nav {
+        top: 0;
+        max-height: 42vh;
+        overflow-y: auto;
+      }
       nav a { flex: 1 1 auto; text-align: center; }
       .grid,
       .metrics { grid-template-columns: 1fr; }
@@ -221,17 +264,18 @@
       <p class="eyebrow">Technology Shift Impact Brief</p>
       <h1>AI in Life Insurance</h1>
       <p class="meta">Generated July 6, 2026. Lookback period: January 1, 2026 through July 6, 2026. Scope: US life insurance, annuities, life distribution, reinsurers, life-focused insurtechs, and adjacent insurance AI signals where they change the strategic posture for carriers.</p>
-      <nav aria-label="Report sections">
-        <a href="#takeaways">Takeaways</a>
-        <a href="#actions">Action Agenda</a>
-        <a href="#value-chain">Value Chain</a>
-        <a href="#competitive">Competitive Impact</a>
-        <a href="#maturity">AI Maturity</a>
-        <a href="#risk">Risk &amp; Regulation</a>
-        <a href="#watchlist">Watchlist</a>
-        <a href="#sources">Sources</a>
-      </nav>
     </header>
+
+    <nav aria-label="Report sections">
+      <a href="#takeaways">Takeaways</a>
+      <a href="#actions">Action Agenda</a>
+      <a href="#value-chain">Value Chain</a>
+      <a href="#competitive">Competitive Impact</a>
+      <a href="#maturity">AI Maturity</a>
+      <a href="#risk">Risk &amp; Regulation</a>
+      <a href="#watchlist">Watchlist</a>
+      <a href="#sources">Sources</a>
+    </nav>
 
     <section id="takeaways">
       <h2>Executive Takeaways</h2>
