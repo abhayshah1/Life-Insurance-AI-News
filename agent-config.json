@@ -11,7 +11,9 @@
     "format": "html",
     "reportsDirectory": "reports",
     "indexFile": "index.html",
-    "filenamePattern": "YYYY-MM-DD.html"
+    "filenamePattern": "YYYY-MM-DD.html",
+    "reportMode": "cumulative",
+    "quietScanBehavior": "preserve prior report content and add a dated latest-scan note rather than removing existing items"
   },
   "publishing": {
     "provider": "github",
@@ -211,6 +213,9 @@
     "Do not include generic AI news unless it has a concrete life insurance, annuity, reinsurer, distributor, regulator, or life-insurance vendor connection.",
     "Deduplicate syndicated stories and cite the strongest available source.",
     "Use an explicit no-major-news state when the scan finds only weak or adjacent items.",
-    "Include AI Operating Maturity signals when credible evidence shows agents, MCP servers, copilots, AI use cases, platforms, or governance controls moving into carrier or vendor workflows."
+    "Include AI Operating Maturity signals when credible evidence shows agents, MCP servers, copilots, AI use cases, platforms, or governance controls moving into carrier or vendor workflows.",
+    "Treat the report as cumulative: preserve prior validated signals, action items, value-chain implications, maturity signals, watchlist questions, and source notes unless they are obsolete, disproven, duplicated, or superseded.",
+    "Do not remove prior items solely because the current daily scan did not find new qualifying news.",
+    "When no new high-confidence item is found, add a dated latest-scan update and keep the accumulated report intact."
   ]
 }
