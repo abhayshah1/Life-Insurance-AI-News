@@ -11,7 +11,7 @@ After generating and validating the report, publish it to GitHub when a remote n
 ## Research Instructions
 
 1. Search the web for items from the last 7 days, with emphasis on the last 24 hours.
-2. Prioritize US life insurance carriers, annuity providers, reinsurers, life-focused insurtechs, underwriting vendors, distribution platforms, claims/service automation vendors, AI operating maturity signals, and regulatory or governance developments.
+2. Prioritize US life insurance carriers, annuity providers, reinsurers, life-focused insurtechs, underwriting vendors, distribution platforms, claims/service automation vendors, AI operating maturity signals, agent/plugin ecosystem signals, and regulatory or governance developments.
 3. Prefer primary or near-primary sources: company press rooms, regulator pages, SEC/earnings materials, reputable insurance trade publications, and major newswires.
 4. Include only items with a clear link to both AI and life insurance, annuities, underwriting, mortality risk, policy servicing, claims, distribution, reinsurance, or insurance AI governance.
 5. Put broad insurance-AI or adjacent-line items in Watchlist only, and label them as lower confidence.
@@ -21,6 +21,7 @@ After generating and validating the report, publish it to GitHub when a remote n
 9. Before rewriting the report, inspect the current `index.html` and the most recent dated report in `reports/` to preserve useful existing content.
 10. If the daily scan finds no new high-confidence items, keep the prior report content and add a brief "Latest scan update" note with the scan date, what was searched, and that no new qualifying items were found.
 11. Add new validated items to the cumulative brief, update existing items when new evidence changes their maturity/impact/confidence, and deduplicate repeated stories.
+12. Scan AI agent and plugin ecosystem sources for life-insurance-specific listings: MCP Registry and reference server lists, Claude/MCP ecosystem pages, Microsoft Copilot Studio/AppSource, OpenAI GPTs/connectors where accessible, GitHub repositories, Salesforce/AppExchange, ServiceNow Store, Guidewire Marketplace, Duck Creek, Sapiens, iPipeline, and other insurance platform marketplaces.
 
 ## Report Requirements
 
@@ -60,6 +61,15 @@ For AI Operating Maturity items, also include:
 - Workflow area: underwriting, claims, service, distribution, advisor productivity, actuarial/pricing, compliance, or operations.
 - Maturity: Exploration, Pilot, Production, Scaled, or Embedded.
 - Reported impact, if available.
+
+For agent/plugin ecosystem items, also include:
+
+- Source class: MCP server, Claude connector, Copilot agent, GPT/connector, marketplace app, repository, or vendor platform plugin.
+- Publisher: company, vendor, open-source maintainer, or unknown.
+- Marketplace/source URL.
+- Life-insurance specificity: direct, adjacent insurance, generic enterprise, or unclear.
+- Deployment maturity: listed, installable, documented, named customer, production case study, or unknown.
+- Diligence action: monitor, test, contact vendor, require controls, or ignore.
 
 If there are no high-confidence life-insurance-specific items, say so clearly, preserve the accumulated prior signals, and convert the daily scan into a short action-oriented update rather than filling space with weak news.
 

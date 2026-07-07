@@ -36,8 +36,55 @@
     "underwriting automation vendors",
     "claims, service, and agent productivity AI vendors serving life insurers",
     "insurance AI governance, risk, and regulation",
-    "carrier AI operating maturity signals"
+    "carrier AI operating maturity signals",
+    "AI agent and plugin ecosystem signals"
   ],
+  "agentPluginEcosystemSources": {
+    "sectionName": "Agent And Plugin Ecosystem",
+    "description": "Track Claude/MCP, Copilot, GPT, connector, repository, and insurance platform marketplace signals that may indicate emerging life-insurance AI workflows.",
+    "sourceTypes": [
+      "MCP Registry",
+      "Model Context Protocol reference and community server lists",
+      "Claude connector or MCP ecosystem pages",
+      "Microsoft Copilot Studio and AppSource",
+      "OpenAI GPTs and connectors where accessible",
+      "GitHub repositories",
+      "Salesforce AppExchange and Agentforce listings",
+      "ServiceNow Store",
+      "Guidewire Marketplace",
+      "Duck Creek marketplace",
+      "Sapiens marketplace or partner listings",
+      "iPipeline partner or marketplace listings"
+    ],
+    "searchTerms": [
+      "life insurance MCP server",
+      "insurance underwriting MCP",
+      "annuity copilot agent",
+      "life insurance Copilot Studio",
+      "insurance underwriting GPT",
+      "life insurance connector",
+      "insurance agent plugin",
+      "policy servicing AI agent",
+      "claims AI copilot",
+      "advisor productivity copilot"
+    ],
+    "fieldsToCapture": [
+      "source class",
+      "publisher",
+      "marketplace or repository URL",
+      "workflow area",
+      "life-insurance specificity",
+      "deployment maturity",
+      "source quality",
+      "diligence action"
+    ],
+    "scoringGuidance": [
+      "Treat a marketplace listing as a weak signal unless it names a life insurance workflow, customer, or production deployment.",
+      "Escalate listings tied to underwriting, policy servicing, advisor productivity, claims, annuities, reinsurance, or regulatory compliance.",
+      "Label generic enterprise plugins as watchlist unless there is a direct life-insurance use case.",
+      "For MCP servers, assess security and governance risk before treating the listing as operationally mature."
+    ]
+  },
   "operatingMaturitySignals": {
     "sectionName": "AI Operating Maturity",
     "description": "Track evidence that carriers and life-insurance vendors are moving AI from experimentation into production workflows.",
@@ -166,7 +213,13 @@
       "model context protocol",
       "use case",
       "production deployment",
-      "enterprise rollout"
+      "enterprise rollout",
+      "plugin",
+      "connector",
+      "Copilot Studio",
+      "AppSource",
+      "AppExchange",
+      "marketplace"
     ],
     "excludeUnlessLifeInsuranceSpecific": [
       "auto insurance",
@@ -214,6 +267,7 @@
     "Deduplicate syndicated stories and cite the strongest available source.",
     "Use an explicit no-major-news state when the scan finds only weak or adjacent items.",
     "Include AI Operating Maturity signals when credible evidence shows agents, MCP servers, copilots, AI use cases, platforms, or governance controls moving into carrier or vendor workflows.",
+    "Scan AI agent and plugin ecosystem sources, including MCP Registry, Claude/MCP pages, Microsoft Copilot/AppSource, OpenAI GPTs/connectors where accessible, GitHub, Salesforce/AppExchange, ServiceNow, Guidewire, Duck Creek, Sapiens, iPipeline, and other insurance platform marketplaces.",
     "Treat the report as cumulative: preserve prior validated signals, action items, value-chain implications, maturity signals, watchlist questions, and source notes unless they are obsolete, disproven, duplicated, or superseded.",
     "Do not remove prior items solely because the current daily scan did not find new qualifying news.",
     "When no new high-confidence item is found, add a dated latest-scan update and keep the accumulated report intact."
