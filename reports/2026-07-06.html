@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Life Insurance AI News Brief - July 6, 2026</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17212b;
+      --muted: #5f6c78;
+      --line: #d8e0e7;
+      --soft: #f5f8fa;
+      --accent: #0f6f78;
+      --risk: #8a5a18;
+      --high: #12693d;
+      --medium: #77540b;
+      --low: #6b7280;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      line-height: 1.5;
+    }
+    main {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 56px;
+    }
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 26px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+    }
+    .meta {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0 0;
+    }
+    nav a {
+      color: var(--accent);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 7px 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+    section {
+      padding: 26px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.45rem;
+    }
+    .summary {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .summary p,
+    .empty p,
+    .notes p {
+      margin: 0 0 10px;
+    }
+    .summary p:last-child,
+    .empty p:last-child,
+    .notes p:last-child {
+      margin-bottom: 0;
+    }
+    .empty {
+      border-left: 4px solid var(--risk);
+      background: #fffaf1;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .metric {
+      border-top: 3px solid var(--accent);
+      background: #ffffff;
+      padding: 12px;
+    }
+    a.metric {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    a.metric:hover,
+    a.metric:focus-visible {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 111, 120, 0.12);
+      transform: translateY(-1px);
+      outline: none;
+    }
+    .metric strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+    .metric span {
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    .item h3 {
+      margin: 0 0 8px;
+      font-size: 1.12rem;
+    }
+    .item h3 a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .label {
+      font-weight: 800;
+      color: var(--ink);
+    }
+    .confidence {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      padding: 2px 9px;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+    .confidence.high { color: var(--high); }
+    .confidence.medium { color: var(--medium); }
+    .confidence.low { color: var(--low); }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .tag {
+      background: #eef3f5;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #344250;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+    }
+    a.back {
+      display: inline-flex;
+      margin-top: 22px;
+      color: var(--accent);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    @media (max-width: 800px) {
+      main { width: min(100% - 24px, 1120px); }
+      nav a { flex: 1 1 auto; text-align: center; }
+      .metrics { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Daily executive brief</p>
+      <h1>Life Insurance AI News</h1>
+      <p class="meta">Generated July 6, 2026 at 8:57 AM Eastern. Primary scan window: June 29, 2026 through July 6, 2026, with limited adjacent lookback for durable governance and research signals.</p>
+      <nav aria-label="Report sections">
+        <a href="#summary">Summary</a>
+        <a href="#top-signals">Top Signals</a>
+        <a href="#carriers">Carriers</a>
+        <a href="#vendors">Insurtechs &amp; Vendors</a>
+        <a href="#operating-maturity">AI Operating Maturity</a>
+        <a href="#risk">Regulatory &amp; Risk</a>
+        <a href="#watchlist">Watchlist</a>
+      </nav>
+    </header>
+
+    <section id="summary">
+      <h2>Executive Summary</h2>
+      <div class="summary">
+        <p><strong>No high-confidence, life-insurance-specific AI announcement was found in the July 6, 2026 scan.</strong> Searches of carrier, annuity, reinsurer, distributor, regulator, trade, newswire, and research sources did not surface a new named US life-market AI deployment or transaction in the last 24 hours.</p>
+        <p>The strongest verified life-insurance-relevant signal remains regulatory: Colorado's AI law is in its 2026 compliance period and expressly addresses insurers, external consumer data, algorithms, and predictive models. The remaining items are watchlist signals: research on LLM-driven life underwriting questionnaires, insurance-style controls for autonomous AI actions, broad insurer AI investment momentum, and cyber-insurance underwriting adaptation.</p>
+        <p><span class="label">Strategic inference:</span> Public disclosure still favors governance, controls, and broad AI investment themes over named production rollouts by life carriers. Strategy teams should keep readiness work focused on explainable decisioning, human appeal paths, model controls, and evidence capture before expecting a sustained public wave of life-carrier AI announcements.</p>
+        <div class="metrics" aria-label="Daily signal counts">
+          <a class="metric" href="#top-signals" title="Top signals: highest-confidence items with a direct AI and life-insurance connection." aria-label="0 top signals. Open the top signals section."><strong>0</strong><span>top signals</span></a>
+          <a class="metric" href="#carriers" title="Verified carrier items: named life carrier, annuity provider, distributor, or reinsurer items confirmed by public sources in the scan window." aria-label="0 verified carrier items. Open the carriers section."><strong>0</strong><span>verified carrier items</span></a>
+          <a class="metric" href="#risk" title="Regulatory signals: policy, governance, or enforcement developments affecting insurance AI decisioning." aria-label="1 regulatory signal. Open the regulatory and risk section."><strong>1</strong><span>regulatory signal</span></a>
+          <a class="metric" href="#watchlist" title="Watchlist items: lower-confidence, older, broad, or adjacent signals that remain strategically relevant." aria-label="4 watchlist items. Open the watchlist section."><strong>4</strong><span>watchlist items</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="top-signals">
+      <h2>Top Signals</h2>
+      <div class="empty">
+        <p><strong>No major news state:</strong> The scan did not find a new high-confidence item with an explicit link to both AI and US life insurance, annuities, mortality risk, policy servicing, claims, distribution, or life reinsurance.</p>
+        <p>Broad insurance-AI and adjacent-line items are captured below in Regulatory &amp; Risk or Watchlist rather than elevated into Top Signals.</p>
+      </div>
+    </section>
+
+    <section id="carriers">
+      <h2>Carriers</h2>
+      <div class="empty">
+        <p><strong>No named US life carrier, annuity provider, life distributor, or life reinsurer public announcement was verified in the scan window.</strong></p>
+        <p>No fresh source met the threshold for a new AI agent, underwriting deployment, service copilot, advisor workflow rollout, annuity servicing automation, or model-governance disclosure.</p>
+      </div>
+    </section>
+
+    <section id="vendors">
+      <h2>Insurtechs &amp; Vendors</h2>
+      <div class="empty">
+        <p><strong>No new life-insurance-specific insurtech or vendor announcement was verified at high confidence in the scan window.</strong></p>
+        <p>The closest life-specific vendor/technology evidence remains research-backed rather than company-announced, so it is tracked in Watchlist.</p>
+      </div>
+    </section>
+
+    <section id="operating-maturity">
+      <h2>AI Operating Maturity</h2>
+      <div class="empty">
+        <p><strong>No verified production maturity signal was found for a named life insurer, annuity provider, distributor, or life reinsurer.</strong></p>
+        <p>No source in this run confirmed a new AI agent, MCP server, copilot, model-risk control, or scaled production use case tied to a specific life workflow at a named organization.</p>
+      </div>
+    </section>
+
+    <section id="risk">
+      <h2>Regulatory &amp; Risk</h2>
+      <div class="item">
+        <h3><a href="https://leg.colorado.gov/bills/sb24-205">Colorado AI law keeps insurance decisioning controls in scope</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Colorado General Assembly</span>
+          <span><span class="label">Date:</span> compliance obligations active in 2026; source page for enacted SB24-205</span>
+          <span class="confidence high">High: primary regulatory source</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> The Colorado bill summary states that developers and deployers of high-risk AI systems must use reasonable care to protect consumers from algorithmic discrimination, complete impact assessments, maintain risk management programs, provide notice when AI is a substantial factor in consequential decisions, and support appeal with human review where technically feasible. It also states that insurers, fraternal benefit societies, and AI developers used by insurers are treated as compliant when they are subject to Colorado insurance laws governing external consumer data, algorithms, predictive models, and rules adopted by the insurance commissioner.</p>
+        <p><span class="label">Inference:</span> Life insurers using AI in underwriting, eligibility, pricing, servicing, or claims should treat Colorado as a practical benchmark for evidence retention, consumer notice, vendor documentation, and appeal workflow design even without a fresh enforcement action this week.</p>
+        <div class="tags"><span class="tag">regulation</span><span class="tag">algorithmic discrimination</span><span class="tag">insurance governance</span><span class="tag">consumer notice</span><span class="tag">model risk</span></div>
+      </div>
+    </section>
+
+    <section id="watchlist">
+      <h2>Watchlist</h2>
+      <div class="item">
+        <h3><a href="https://arxiv.org/abs/2604.02034">LLM adaptive questionnaires tested in a life insurance mobile-app context</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Academic research / industry-partner test environment</span>
+          <span><span class="label">Date:</span> April 2, 2026</span>
+          <span class="confidence medium">Medium: explicit life-insurance test, not a named carrier deployment</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> The ARQuest paper describes LLM-powered adaptive questionnaires using retrieval augmented generation and alternative data signals. Its abstract says a life insurance system integrated into an industry partner mobile app was tested in two experiments; traditional questionnaires produced slightly higher risk-assessment accuracy, while adaptive GPT-powered versions used fewer questions and were preferred by users.</p>
+        <p><span class="label">Inference:</span> This is a useful life-specific design signal for accelerated underwriting intake, but it should not be read as proof of production adoption by a US carrier because the source does not name a carrier or announce commercial deployment.</p>
+        <div class="tags"><span class="tag">life underwriting</span><span class="tag">LLM</span><span class="tag">adaptive questionnaire</span><span class="tag">RAG</span><span class="tag">watchlist</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://arxiv.org/abs/2606.16465">Trace-economic underwriting proposes controls for autonomous AI actions</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Academic research</span>
+          <span><span class="label">Date:</span> June 15, 2026</span>
+          <span class="confidence medium">Medium: relevant control framework, not life-specific deployment</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> The paper proposes mapping tool-use traces to customer exposure and claimable loss. In its testbed, trace-economic pricing reduced pricing error from $17.7K to $569 and trace-conditioned controls reduced CVaR95 by 72% on evaluated software-engineering traces.</p>
+        <p><span class="label">Inference:</span> The framework is strategically relevant to future life-insurer AI agents in underwriting, service, or operations because it links delegated permissions, trace evidence, pricing, and controls, but the source is not a life-insurance deployment announcement.</p>
+        <div class="tags"><span class="tag">AI agents</span><span class="tag">controls</span><span class="tag">underwriting</span><span class="tag">risk transfer</span><span class="tag">watchlist</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://www.techradar.com/pro/ai-is-the-top-investment-area-for-3-out-of-4-insurance-ceos">Insurance CEO AI investment signal remains broad rather than life-specific</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> TechRadar citing KPMG data</span>
+          <span><span class="label">Date:</span> June 3, 2026</span>
+          <span class="confidence low">Low: broad insurance survey reporting, not life-market specific</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> TechRadar reported KPMG data showing 73% of insurance CEOs view AI as a top investment priority, with AI being used across underwriting, claims, onboarding, and customer service. The article also reported that compliance, security risk, and dependence on large technology providers remain concerns.</p>
+        <p><span class="label">Inference:</span> The survey signal supports continued AI budget pressure inside life insurers, but it is not strong enough for Top Signals because it does not identify a US life carrier, annuity provider, reinsurer, distributor, or life vendor.</p>
+        <div class="tags"><span class="tag">insurance AI</span><span class="tag">CEO survey</span><span class="tag">investment</span><span class="tag">governance</span><span class="tag">watchlist</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://www.wsj.com/pro/cybersecurity/cyber-insurers-focus-on-speed-as-ai-rewrites-security-0983ad61">Cyber insurers adjust underwriting questions as AI accelerates threat response risk</a></h3>
+        <p class="details">
+          <span><span class="label">Organization:</span> Wall Street Journal / WSJ Pro</span>
+          <span><span class="label">Date:</span> July 1, 2026</span>
+          <span class="confidence low">Low: adjacent insurance line, not life insurance</span>
+        </p>
+        <p><span class="label">Sourced facts:</span> WSJ Pro reported that cyber insurers are shifting attention from installed controls to how quickly policyholders can respond when defenses fail, because AI may shorten the time between vulnerability discovery and exploitation.</p>
+        <p><span class="label">Inference:</span> This is adjacent-line watchlist material for life insurers, not a life-insurance news item. It matters because the same AI-driven operational resilience questions may influence vendor oversight, enterprise risk controls, and cyber risk management for life and annuity platforms.</p>
+        <div class="tags"><span class="tag">adjacent line</span><span class="tag">cyber insurance</span><span class="tag">AI risk</span><span class="tag">vendor oversight</span><span class="tag">watchlist</span></div>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h2>Source Notes</h2>
+      <p>This report intentionally uses a no-major-news state because the July 6, 2026 scan did not surface a high-confidence, life-insurance-specific AI item from a named carrier, annuity provider, reinsurer, distributor, or life-focused vendor.</p>
+      <p>Primary and near-primary sourcing took priority over volume. Broad insurance-AI, academic, and adjacent-line items were kept in Regulatory &amp; Risk or Watchlist rather than promoted into Top Signals.</p>
+      <p>Sources used in this brief: Colorado General Assembly SB24-205 page; arXiv papers on adaptive life-insurance questionnaires, trace-economic underwriting, and agentic-AI insurance; TechRadar reporting on KPMG insurance CEO AI data; and WSJ Pro reporting on AI-driven cyber-insurance underwriting changes. Scan completed July 6, 2026 at 8:57 AM America/New_York.</p>
+      <a class="back" href="../index.html">Back to index</a>
+    </section>
+  </main>
+</body>
+</html>

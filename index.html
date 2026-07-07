@@ -161,6 +161,19 @@
       background: var(--white);
       padding: 12px;
     }
+    a.metric {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    a.metric:hover,
+    a.metric:focus-visible {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 111, 120, 0.12);
+      transform: translateY(-1px);
+      outline: none;
+    }
     .metric strong {
       display: block;
       font-size: 1.35rem;
@@ -250,30 +263,30 @@
       </div>
       <div class="date-box" aria-label="Latest report date">
         <span>Latest update</span>
-        <strong>July 5, 2026</strong>
+        <strong>July 6, 2026</strong>
       </div>
     </header>
 
     <section aria-labelledby="today-title">
-      <h2 id="today-title">Today&apos;s Read</h2>
+      <h2 id="today-title">Today's Read</h2>
       <div class="brief">
         <div class="summary">
           <span class="status">No major life-insurance-specific AI item found</span>
-          <p>The July 5, 2026 scan did not surface a new high-confidence AI announcement tied directly to a named US life carrier, annuity provider, reinsurer, distributor, or life-focused vendor.</p>
-          <p>The clearest verified signal is regulatory: Colorado's AI law remains directly relevant to insurance decisioning, consumer notice, and appeal workflows. The rest of the credible activity is watchlist material on underwriting controls and insuring agentic AI risk.</p>
+          <p>The July 6, 2026 scan did not surface a new high-confidence AI announcement tied directly to a named US life carrier, annuity provider, reinsurer, distributor, or life-focused vendor.</p>
+          <p>The strongest verified signal is still regulatory: Colorado's AI law keeps insurance decisioning, consumer notice, appeal, and model-control obligations in scope. The remaining activity is watchlist material on LLM underwriting intake, autonomous-agent risk controls, broad insurer AI investment, and adjacent cyber-insurance underwriting changes.</p>
           <div class="button-row">
-            <a class="button" href="reports/2026-07-05.html">Read full brief</a>
-            <a class="secondary" href="reports/2026-07-05.html#risk">Review regulatory risk</a>
+            <a class="button" href="reports/2026-07-06.html">Read full brief</a>
+            <a class="secondary" href="reports/2026-07-06.html#watchlist">Review watchlist</a>
           </div>
         </div>
         <aside class="signal" aria-labelledby="signal-title">
           <h2 id="signal-title">Strategic Signal</h2>
-          <p>Public evidence still shows more motion in governance and control architecture than in named life-carrier production disclosure.</p>
-          <p>For life insurers, the near-term priority remains proving fairness, auditability, and human review around underwriting and servicing before broader public AI rollout claims appear.</p>
+          <p>Public evidence continues to show more movement in governance, controls, and broad AI investment than in named life-carrier production disclosures.</p>
+          <p>For life insurers, the practical focus remains explainable decisioning, human review paths, model documentation, and vendor oversight before public AI rollout claims accelerate.</p>
           <div class="metrics" aria-label="Report counts">
-            <div class="metric"><strong>0</strong><span>verified life signals</span></div>
-            <div class="metric"><strong>0</strong><span>maturity signals</span></div>
-            <div class="metric"><strong>3</strong><span>risk/watchlist items</span></div>
+            <a class="metric" href="reports/2026-07-06.html#top-signals" title="Verified life signals: high-confidence items directly tied to life insurance, annuities, life reinsurance, or life distribution from primary or near-primary sources." aria-label="0 verified life signals. High-confidence life-insurance-specific items. Open the latest report top signals section."><strong>0</strong><span>verified life signals</span></a>
+            <a class="metric" href="reports/2026-07-06.html#operating-maturity" title="Maturity signals: credible evidence that AI moved into real insurance workflows such as agents, copilots, MCP servers, production deployments, scaled rollouts, or governance programs." aria-label="0 maturity signals. Verified operating-maturity evidence. Open the latest report operating maturity section."><strong>0</strong><span>maturity signals</span></a>
+            <a class="metric" href="reports/2026-07-06.html#risk" title="Risk or watchlist items: regulatory, governance, research, or adjacent insurance-AI signals that matter strategically but are not strong enough to count as core life-specific top signals." aria-label="5 risk or watchlist items. Open the latest report regulatory and risk section."><strong>5</strong><span>risk/watchlist items</span></a>
           </div>
         </aside>
       </div>
@@ -283,10 +296,10 @@
       <h2 id="maturity-title">AI Operating Maturity</h2>
       <div class="summary">
         <span class="status">No verified production maturity signal found</span>
-        <p>The latest brief did not identify a named life insurer, distributor, annuity provider, or life reinsurer confirming a new AI agent, MCP server, or scaled production workflow.</p>
-        <p>The most relevant maturity evidence remains indirect: research-backed control patterns for underwriting and agentic AI governance rather than fresh deployment disclosures.</p>
+        <p>The latest brief did not identify a named life insurer, distributor, annuity provider, or life reinsurer confirming a new AI agent, MCP server, copilot, or scaled production workflow.</p>
+        <p>The most relevant maturity evidence remains indirect: regulatory expectations and research-backed control patterns for underwriting intake and autonomous-agent risk.</p>
         <div class="button-row">
-          <a class="secondary" href="reports/2026-07-05.html#operating-maturity">View maturity section</a>
+          <a class="secondary" href="reports/2026-07-06.html#operating-maturity">View maturity section</a>
         </div>
       </div>
     </section>
@@ -295,23 +308,23 @@
       <h2 id="signals-title">Latest Signals</h2>
       <div class="grid">
         <article class="item">
-          <h3><a href="reports/2026-07-05.html#top-signals">No major life-insurance-specific AI item in the scan</a></h3>
-          <p class="meta">The strongest finding is the absence of a high-confidence carrier or vendor announcement in the last week.</p>
+          <h3><a href="reports/2026-07-06.html#top-signals">No major life-insurance-specific AI item in the scan</a></h3>
+          <p class="meta">The strongest finding is the absence of a high-confidence carrier or vendor announcement in the last day.</p>
           <span class="confidence low">Explicit no-major-news state</span>
         </article>
         <article class="item">
-          <h3><a href="reports/2026-07-05.html#risk">Colorado AI law keeps insurance decisioning in scope</a></h3>
-          <p class="meta">Primary-source regulatory signal affecting underwriting, notice, and appeals expectations.</p>
+          <h3><a href="reports/2026-07-06.html#risk">Colorado AI law keeps insurance decisioning in scope</a></h3>
+          <p class="meta">Primary-source regulatory signal affecting underwriting, notice, model controls, and appeal workflows.</p>
           <span class="confidence">High confidence</span>
         </article>
         <article class="item">
-          <h3><a href="reports/2026-07-05.html#watchlist">Trace-economic underwriting points to control patterns for AI agents</a></h3>
-          <p class="meta">Research-led watchlist signal on pricing and controlling autonomous AI actions.</p>
+          <h3><a href="reports/2026-07-06.html#watchlist">LLM adaptive questionnaires tested for life underwriting intake</a></h3>
+          <p class="meta">Research-backed life-specific signal, but not a named US carrier deployment.</p>
           <span class="confidence">Medium confidence</span>
         </article>
         <article class="item">
-          <h3><a href="reports/2026-07-05.html#risk">Agentic AI insurance framed as a layered coverage problem</a></h3>
-          <p class="meta">Relevant to reinsurers and governance teams, but not a new life-carrier deployment.</p>
+          <h3><a href="reports/2026-07-06.html#watchlist">Autonomous-agent risk controls remain watchlist material</a></h3>
+          <p class="meta">Relevant to future AI agents in underwriting, service, and operations.</p>
           <span class="confidence">Medium confidence</span>
         </article>
       </div>
@@ -324,6 +337,7 @@
           <p>Browse earlier daily briefs and compare how the signal changes over time.</p>
         </div>
         <div class="button-row">
+          <a class="secondary" href="reports/2026-07-06.html">July 6, 2026 report</a>
           <a class="secondary" href="reports/2026-07-05.html">July 5, 2026 report</a>
           <a class="secondary" href="reports/2026-07-04.html">July 4, 2026 report</a>
         </div>

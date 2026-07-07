@@ -108,6 +108,19 @@
       background: #ffffff;
       padding: 12px;
     }
+    a.metric {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+    }
+    a.metric:hover,
+    a.metric:focus-visible {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 111, 120, 0.12);
+      transform: translateY(-1px);
+      outline: none;
+    }
     .metric strong {
       display: block;
       font-size: 1.35rem;
@@ -209,10 +222,10 @@
         <p>The strongest verified development affecting life insurers is regulatory rather than commercial: Colorado's AI law remains directly relevant to insurance decisioning and disclosure obligations. The other credible signals are adjacent research items on underwriting controls and insuring agentic AI risk, which are useful for governance and watchlist tracking but do not qualify as fresh life-carrier news.</p>
         <p><span class="label">Strategic inference:</span> The visible market still shows more movement in AI governance and control frameworks than in named public deployment disclosures from life carriers. That suggests execution may be progressing privately while public communications remain cautious.</p>
         <div class="metrics" aria-label="Daily signal counts">
-          <div class="metric"><strong>0</strong><span>top signals</span></div>
-          <div class="metric"><strong>0</strong><span>verified carrier items</span></div>
-          <div class="metric"><strong>1</strong><span>regulatory signal</span></div>
-          <div class="metric"><strong>2</strong><span>watchlist items</span></div>
+          <a class="metric" href="#top-signals" title="Top signals: the highest-confidence items in the brief with a direct AI and life-insurance connection." aria-label="0 top signals. Open the top signals section."><strong>0</strong><span>top signals</span></a>
+          <a class="metric" href="#carriers" title="Verified carrier items: named life carrier, annuity provider, distributor, or reinsurer items confirmed by public sources in the scan window." aria-label="0 verified carrier items. Open the carriers section."><strong>0</strong><span>verified carrier items</span></a>
+          <a class="metric" href="#risk" title="Regulatory signal: policy, governance, or enforcement developments that directly affect insurance AI decisioning or controls." aria-label="1 regulatory signal. Open the regulatory and risk section."><strong>1</strong><span>regulatory signal</span></a>
+          <a class="metric" href="#watchlist" title="Watchlist items: relevant but lower-priority or lower-confidence signals that matter strategically without qualifying as top life-specific news." aria-label="2 watchlist items. Open the watchlist section."><strong>2</strong><span>watchlist items</span></a>
         </div>
       </div>
     </section>
